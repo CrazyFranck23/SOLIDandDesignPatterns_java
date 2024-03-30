@@ -1,0 +1,16 @@
+package fr.esiea.tools.strategy_observer.athletics;
+
+import java.time.LocalDateTime;
+
+public class MockStopEvent extends Event {
+
+    @Override
+    public LocalDateTime getCurrentTime() {
+        return LocalDateTime.of(2023, 1, 3, 10, 15, 25, 6777);
+    }
+
+    @Override
+    public String getDescription() {
+        return "StopEvent";
+    }
+}

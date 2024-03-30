@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>fr.esiea.tools</groupId>
+    <artifactId>SOLIDandDesignPatterns</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>21</java.version>
+    </properties>
+    <build>
+        <plugins>
+            <!-- Maven Compiler Plugin -->
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.12.1</version>
+                <configuration>
+                    <release>${java.version}</release>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>default-testCompile</id>
+                        <phase>test-compile</phase>
+                        <configuration>
+                            <testExcludes>
+                                <exclude>**/adapter/**</exclude>
+                                <exclude>**/facade/**</exclude>
+                                <exclude>**/factory_method/**</exclude>
+                                <exclude>**/singleton/**</exclude>
+                                <exclude>**/solid/orchestra_ex1/**</exclude>
+                                <exclude>**/solid/orchestra_ex2/**</exclude>
+                                <exclude>**/solid/orchestra_ex3/**</exclude>
+                                <exclude>**/solid/orchestra_ex4/**</exclude>
+                                <exclude>**/solid/orchestra_ex5/**</exclude>
+                                <exclude>**/state/**</exclude>
+                                <exclude>**/static_logger/**</exclude>
+                                <exclude>**/strategy/**</exclude>
+                                <exclude>**/strategy_observer/observer/**</exclude>
+                                <exclude>**/strategy_observer/athletics/**</exclude>
+                            </testExcludes>
+                        </configuration>
+                        <goals>
+                            <goal>testCompile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+             <!-- Maven JavaDoc Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.6.2</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- Maven Surefire Plugin for running tests -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.3</version>
+                <configuration>
+                    <excludes>
+                        <exclude>**/adapter/**</exclude>
+                        <exclude>**/facade/**</exclude>
+                        <exclude>**/factory_method/**</exclude>
+                        <exclude>**/singleton/**</exclude>
+                        <exclude>**/solid/orchestra_ex1/**</exclude>
+                        <exclude>**/solid/orchestra_ex2/**</exclude>
+                        <exclude>**/solid/orchestra_ex3/**</exclude>
+                        <exclude>**/solid/orchestra_ex4/**</exclude>
+                        <exclude>**/solid/orchestra_ex5/**</exclude>
+                        <exclude>**/state/**</exclude>
+                        <exclude>**/static_logger/**</exclude>
+                        <exclude>**/strategy/**</exclude>
+                        <exclude>**/strategy_observer/observer/**</exclude>
+                        <exclude>**/strategy_observer/athletics/**</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+            <!-- JaCoCo Plugin for code coverage -->
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.11</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <!-- attached to Maven test phase -->
+                    <execution>
+                        <id>report</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <!-- JUnit Jupiter API -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.10.1</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- JUnit Jupiter Engine -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.10.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
