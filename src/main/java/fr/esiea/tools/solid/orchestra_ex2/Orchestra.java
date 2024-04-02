@@ -4,23 +4,32 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Orchestra {
-    private List<fr.esiea.tools.solid.orchestra_ex1.Wind> winds = new ArrayList<>();
-    private List<fr.esiea.tools.solid.orchestra_ex1.Percussion> percussions = new ArrayList<>();
+    private List<Wind> winds = new ArrayList<>();
+    private List<Percussion> percussions = new ArrayList<>();
+    private List<Instrument> instruments = new ArrayList<>();
 
-    void tuneWind(fr.esiea.tools.solid.orchestra_ex1.Wind wind) {
+    void tuneWind(Wind wind) {
         wind.play();
     }
 
-    void tunePercussion(fr.esiea.tools.solid.orchestra_ex1.Percussion percussion) {
+    void tunePercussion(Percussion percussion) {
         percussion.play();
     }
 
+    void tuneInstrument(Instrument instrument) {
+        instrument.play();
+    }
+
     void tuneAll() {
-        for (fr.esiea.tools.solid.orchestra_ex1.Wind wind : winds) {
+        for (Wind wind : winds) {
             tuneWind(wind);
         }
-        for (fr.esiea.tools.solid.orchestra_ex1.Percussion percussion : percussions) {
+        for (Percussion percussion : percussions) {
             tunePercussion(percussion);
+        }
+
+        for (Instrument instrument : instruments) {
+            tuneInstrument(instrument);
         }
     }
 
@@ -30,5 +39,9 @@ public class Orchestra {
 
     void addPercussion(Percussion percussion) {
         percussions.add(percussion);
+    }
+
+    void addInstrument(Instrument instrument) {
+        instruments.add(instrument);
     }
 }
