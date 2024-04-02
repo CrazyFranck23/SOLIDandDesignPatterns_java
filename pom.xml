@@ -33,7 +33,7 @@
                                 <exclude>**/facade/**</exclude>
                                 <exclude>**/factory_method/**</exclude>
                                 <exclude>**/singleton/**</exclude>
-                                <exclude>**/solid/orchestra_ex1/**</exclude>
+
                                 <exclude>**/solid/orchestra_ex2/**</exclude>
                                 <exclude>**/solid/orchestra_ex3/**</exclude>
                                 <exclude>**/solid/orchestra_ex4/**</exclude>
@@ -76,7 +76,7 @@
                         <exclude>**/facade/**</exclude>
                         <exclude>**/factory_method/**</exclude>
                         <exclude>**/singleton/**</exclude>
-                        <exclude>**/solid/orchestra_ex1/**</exclude>
+
                         <exclude>**/solid/orchestra_ex2/**</exclude>
                         <exclude>**/solid/orchestra_ex3/**</exclude>
                         <exclude>**/solid/orchestra_ex4/**</exclude>
