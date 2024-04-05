@@ -34,10 +34,6 @@
                                 <exclude>**/factory_method/**</exclude>
                                 <exclude>**/singleton/**</exclude>
 
-
-                                <exclude>**/solid/orchestra_ex3/**</exclude>
-                                <exclude>**/solid/orchestra_ex4/**</exclude>
-                                <exclude>**/solid/orchestra_ex5/**</exclude>
                                 <exclude>**/state/**</exclude>
                                 <exclude>**/static_logger/**</exclude>
                                 <exclude>**/strategy/**</exclude>
@@ -77,10 +73,6 @@
                         <exclude>**/factory_method/**</exclude>
                         <exclude>**/singleton/**</exclude>
 
-
-                        <exclude>**/solid/orchestra_ex3/**</exclude>
-                        <exclude>**/solid/orchestra_ex4/**</exclude>
-                        <exclude>**/solid/orchestra_ex5/**</exclude>
                         <exclude>**/state/**</exclude>
                         <exclude>**/static_logger/**</exclude>
                         <exclude>**/strategy/**</exclude>
