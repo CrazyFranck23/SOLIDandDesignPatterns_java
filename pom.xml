@@ -32,7 +32,7 @@
                                 <exclude>**/adapter/**</exclude>
                                 <exclude>**/facade/**</exclude>
                                 <exclude>**/factory_method/**</exclude>
-                                <exclude>**/singleton/**</exclude>
+
 
                                 <exclude>**/state/**</exclude>
 
@@ -71,7 +71,7 @@
                         <exclude>**/adapter/**</exclude>
                         <exclude>**/facade/**</exclude>
                         <exclude>**/factory_method/**</exclude>
-                        <exclude>**/singleton/**</exclude>
+
 
                         <exclude>**/state/**</exclude>
 
