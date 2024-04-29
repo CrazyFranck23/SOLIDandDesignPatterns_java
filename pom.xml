@@ -35,7 +35,7 @@
                                 <exclude>**/singleton/**</exclude>
 
                                 <exclude>**/state/**</exclude>
-                                <exclude>**/static_logger/**</exclude>
+
                                 <exclude>**/strategy/**</exclude>
                                 <exclude>**/strategy_observer/observer/**</exclude>
                                 <exclude>**/strategy_observer/athletics/**</exclude>
@@ -74,7 +74,7 @@
                         <exclude>**/singleton/**</exclude>
 
                         <exclude>**/state/**</exclude>
-                        <exclude>**/static_logger/**</exclude>
+
                         <exclude>**/strategy/**</exclude>
                         <exclude>**/strategy_observer/observer/**</exclude>
                         <exclude>**/strategy_observer/athletics/**</exclude>
