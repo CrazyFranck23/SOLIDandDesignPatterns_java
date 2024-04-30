@@ -1,10 +1,12 @@
 package fr.esiea.tools.factory_method;
 
 public class Delivery {
-    private String deliveryMeans;
+    private final String deliveryMeans;
     private String destination;
 
-    public Delivery(String deliveryMeans) {}
+    public Delivery(String deliveryMeans) {
+        this.deliveryMeans = deliveryMeans;
+    }
 
     public void setDestination(String destination) {
         this.destination = destination;

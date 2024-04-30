@@ -31,7 +31,7 @@
                             <testExcludes>
                                 <exclude>**/adapter/**</exclude>
                                 <exclude>**/facade/**</exclude>
-                                <exclude>**/factory_method/**</exclude>
+
 
 
                                 <exclude>**/state/**</exclude>
@@ -70,7 +70,7 @@
                     <excludes>
                         <exclude>**/adapter/**</exclude>
                         <exclude>**/facade/**</exclude>
-                        <exclude>**/factory_method/**</exclude>
+
 
 
                         <exclude>**/state/**</exclude>
