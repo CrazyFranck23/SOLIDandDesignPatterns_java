@@ -37,7 +37,7 @@
                                 <exclude>**/state/**</exclude>
 
 
-                                <exclude>**/strategy_observer/observer/**</exclude>
+
                                 <exclude>**/strategy_observer/athletics/**</exclude>
                             </testExcludes>
                         </configuration>
@@ -76,7 +76,7 @@
                         <exclude>**/state/**</exclude>
 
 
-                        <exclude>**/strategy_observer/observer/**</exclude>
+
                         <exclude>**/strategy_observer/athletics/**</exclude>
                     </excludes>
                 </configuration>
