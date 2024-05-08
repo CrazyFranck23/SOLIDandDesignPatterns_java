@@ -38,7 +38,7 @@
 
 
 
-                                <exclude>**/strategy_observer/athletics/**</exclude>
+
                             </testExcludes>
                         </configuration>
                         <goals>
@@ -77,7 +77,7 @@
 
 
 
-                        <exclude>**/strategy_observer/athletics/**</exclude>
+
                     </excludes>
                 </configuration>
             </plugin>
