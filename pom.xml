@@ -29,7 +29,7 @@
                         <phase>test-compile</phase>
                         <configuration>
                             <testExcludes>
-                                <exclude>**/adapter/**</exclude>
+
                                 <exclude>**/facade/**</exclude>
 
 
@@ -68,7 +68,7 @@
                 <version>3.2.3</version>
                 <configuration>
                     <excludes>
-                        <exclude>**/adapter/**</exclude>
+
                         <exclude>**/facade/**</exclude>
 
 
