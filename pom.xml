@@ -30,7 +30,7 @@
                         <configuration>
                             <testExcludes>
 
-                                <exclude>**/facade/**</exclude>
+
 
 
 
@@ -69,7 +69,7 @@
                 <configuration>
                     <excludes>
 
-                        <exclude>**/facade/**</exclude>
+
 
 
 
